@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: beb8085a638530e4fad66cb63582fadf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2764435205491868528
+    second: Bonzi_buddy_0
+  - first:
+      213: -9022890613822892748
+    second: Bonzi_buddy_1
+  - first:
+      213: -4181462369864431996
+    second: Bonzi_buddy_2
+  - first:
+      213: 1653999117621495333
+    second: Bonzi_buddy_3
+  - first:
+      213: 7454053892399309722
+    second: Bonzi_buddy_4
+  - first:
+      213: 1368473269691306468
+    second: Bonzi_buddy_5
+  - first:
+      213: 5051334631492518543
+    second: Bonzi_buddy_6
+  - first:
+      213: -308738478735916931
+    second: Bonzi_buddy_7
+  - first:
+      213: -483156749565451789
+    second: Bonzi_buddy_8
+  - first:
+      213: -8375404314342956250
+    second: Bonzi_buddy_9
+  - first:
+      213: -8471568158371903349
+    second: Bonzi_buddy_10
+  - first:
+      213: -4978781956344319093
+    second: Bonzi_buddy_11
+  - first:
+      213: -2466355085663362957
+    second: Bonzi_buddy_12
+  - first:
+      213: -5285025819994603127
+    second: Bonzi_buddy_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bonzi_buddy_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 20
+        width: 1040
+        height: 771
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cb214c3d0c2a9d0800000000000000
+      internalID: -2764435205491868528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_1
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 790
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43551e3cac048c280800000000000000
+      internalID: -9022890613822892748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_2
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 412
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4864192012678f5c0800000000000000
+      internalID: -4181462369864431996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 386
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52683a82f6f24f610800000000000000
+      internalID: 1653999117621495333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_4
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 14
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a932419958e127760800000000000000
+      internalID: 7454053892399309722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 8
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e15194303bcdf210800000000000000
+      internalID: 1368473269691306468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 14
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f828dbf8512f91640800000000000000
+      internalID: 5051334631492518543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_7
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 8
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7083764df327bbf0800000000000000
+      internalID: -308738478735916931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_8
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 14
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1a1530f7b7b49f0800000000000000
+      internalID: -483156749565451789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_9
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 14
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6236051a62694cb80800000000000000
+      internalID: -8375404314342956250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_10
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 8
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b888bbde4a1fe6a80800000000000000
+      internalID: -8471568158371903349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_11
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 14
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83f8fd7030d7eab0800000000000000
+      internalID: -4978781956344319093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_12
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 8
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370ae0ded1fb5cdd0800000000000000
+      internalID: -2466355085663362957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bonzi_buddy_13
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 14
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981447a9401d7a6b0800000000000000
+      internalID: -5285025819994603127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bonzi_buddy_0: -2764435205491868528
+      Bonzi_buddy_1: -9022890613822892748
+      Bonzi_buddy_10: -8471568158371903349
+      Bonzi_buddy_11: -4978781956344319093
+      Bonzi_buddy_12: -2466355085663362957
+      Bonzi_buddy_13: -5285025819994603127
+      Bonzi_buddy_2: -4181462369864431996
+      Bonzi_buddy_3: 1653999117621495333
+      Bonzi_buddy_4: 7454053892399309722
+      Bonzi_buddy_5: 1368473269691306468
+      Bonzi_buddy_6: 5051334631492518543
+      Bonzi_buddy_7: -308738478735916931
+      Bonzi_buddy_8: -483156749565451789
+      Bonzi_buddy_9: -8375404314342956250
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
