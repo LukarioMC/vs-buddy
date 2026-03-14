@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 117433539}
   - component: {fileID: 117433538}
   - component: {fileID: 117433537}
-  - component: {fileID: 117433536}
   m_Layer: 0
   m_Name: Wall (2)
   m_TagString: Untagged
@@ -138,33 +137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &117433536
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117433535}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &117433537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -281,6 +253,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &554283572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7305322730259189557, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_Name
+      value: BonziBuddy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465480423712988285, guid: 362d449539b2af847a4b54b712f69918, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 362d449539b2af847a4b54b712f69918, type: 3}
 --- !u!1 &583357019
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +321,6 @@ GameObject:
   - component: {fileID: 583357023}
   - component: {fileID: 583357022}
   - component: {fileID: 583357021}
-  - component: {fileID: 583357020}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: Untagged
@@ -300,33 +328,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &583357020
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583357019}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &583357021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -454,7 +455,7 @@ GameObject:
   - component: {fileID: 664731010}
   - component: {fileID: 664731009}
   - component: {fileID: 664731011}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GlobalScripts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +548,6 @@ GameObject:
   - component: {fileID: 1212446444}
   - component: {fileID: 1212446443}
   - component: {fileID: 1212446442}
-  - component: {fileID: 1212446441}
   m_Layer: 0
   m_Name: Wall (3)
   m_TagString: Untagged
@@ -555,33 +555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &1212446441
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1212446440}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1212446442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -801,7 +774,6 @@ GameObject:
   - component: {fileID: 1779597590}
   - component: {fileID: 1779597589}
   - component: {fileID: 1779597588}
-  - component: {fileID: 1779597587}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -809,33 +781,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &1779597587
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779597586}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1779597588
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -958,6 +903,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1649234308}
   - {fileID: 664731010}
+  - {fileID: 554283572}
   - {fileID: 1779597590}
   - {fileID: 117433539}
   - {fileID: 1212446444}
