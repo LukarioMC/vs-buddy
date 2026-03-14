@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 664731009}
   - component: {fileID: 664731011}
   m_Layer: 0
-  m_Name: dragObj
+  m_Name: GlobalScripts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -474,6 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragObjectPrefab: {fileID: 6201296542072939899, guid: 0e056f3b39f5d2a4aba939c715a126bc, type: 3}
+  updateInterval: 1
 --- !u!4 &664731010
 Transform:
   m_ObjectHideFlags: 0
@@ -956,8 +957,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1649234308}
+  - {fileID: 664731010}
   - {fileID: 1779597590}
   - {fileID: 117433539}
   - {fileID: 1212446444}
   - {fileID: 583357023}
-  - {fileID: 664731010}

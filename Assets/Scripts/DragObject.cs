@@ -24,14 +24,15 @@ public class DragObject2D : MonoBehaviour
         float angleRad = Mathf.Atan2(direction.y, direction.x);
         float angleDeg = angleRad * Mathf.Rad2Deg;
 
-        // if(direction.x < 0)
-        // {
-        //     dragObject.transform.localScale = new Vector3(-1, 1, 1); // Flip the object horizontally
-        // }
-        // else
-        // {
-        //     dragObject.transform.localScale = new Vector3(1, 1, 1); // Normal scale
-        // }
+        if(direction.x < 0)
+        {
+            dragObject.transform.localScale = new Vector3(-1, 1, 1); // Flip the object horizontally
+            angleDeg += 180; // Adjust the angle for the flipped object
+        }
+        else
+        {
+            dragObject.transform.localScale = new Vector3(1, 1, 1); // Normal scale
+        }
 
         dragObject.transform.position = newPosition;
         dragObject.transform.rotation = Quaternion.Euler(0, 0, angleDeg);
@@ -47,7 +48,7 @@ public class DragObject2D : MonoBehaviour
         }
     }
 
-    void update()
+    void Update()
     {
         if (dragObject != null)
         {
@@ -56,8 +57,7 @@ public class DragObject2D : MonoBehaviour
             if (timeSinceLastUpdate >= updateInterval)
             {
                 // Update the position of the drag object
-                Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
-                dragObject.transform.position = newPosition;
+                lastPosition = dragObject.transform.position;
                 timeSinceLastUpdate = 0f; // Reset the timer
             }
         }
