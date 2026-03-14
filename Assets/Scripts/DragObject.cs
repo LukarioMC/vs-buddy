@@ -24,14 +24,17 @@ public class DragObject2D : MonoBehaviour
         float angleRad = Mathf.Atan2(direction.y, direction.x);
         float angleDeg = angleRad * Mathf.Rad2Deg;
 
+        SpriteRenderer renderer = dragObject.GetComponentInChildren<SpriteRenderer>();
         if(direction.x < 0)
         {
-            dragObject.transform.localScale = new Vector3(-1, 1, 1); // Flip the object horizontally
+            renderer.flipY = true;
+            //dragObject.transform.localScale = new Vector3(-1, 1, 1); // Flip the object horizontally
             angleDeg += 180; // Adjust the angle for the flipped object
         }
         else
         {
-            dragObject.transform.localScale = new Vector3(1, 1, 1); // Normal scale
+            renderer.flipY = false;
+            //dragObject.transform.localScale = new Vector3(1, 1, 1); // Normal scale
         }
 
         dragObject.transform.position = newPosition;
