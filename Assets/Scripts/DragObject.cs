@@ -16,38 +16,13 @@ public class DragObject2D : MonoBehaviour
         timeSinceLastUpdate = 0f;
     }
 
-    void OnMouseDrag()
-    {
-        // Continuously update the object's position with the mouse position plus the offset
-        Vector3 newPosition =  Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
-        Vector3 direction = newPosition - lastPosition;
-        float angleRad = Mathf.Atan2(direction.y, direction.x);
-        float angleDeg = angleRad * Mathf.Rad2Deg;
-
-        SpriteRenderer renderer = dragObject.GetComponentInChildren<SpriteRenderer>();
-        if(direction.x < 0)
-        {
-            renderer.flipY = true;
-            //dragObject.transform.localScale = new Vector3(-1, 1, 1); // Flip the object horizontally
-            angleDeg += 180; // Adjust the angle for the flipped object
-        }
-        else
-        {
-            renderer.flipY = false;
-            //dragObject.transform.localScale = new Vector3(1, 1, 1); // Normal scale
-        }
-
-        dragObject.transform.position = newPosition;
-        dragObject.transform.rotation = Quaternion.Euler(0, 0, angleDeg);
-        //transform.position = Camera.main.ScreenToWorldPoint(newPosition) + offset;
-    }
-
     void OnMouseUp()
     {
         // Destroy the drag object when the mouse button is released
         if (dragObject != null)
         {
             Destroy(dragObject);
+            dragObject = null;
         }
     }
 
@@ -63,6 +38,35 @@ public class DragObject2D : MonoBehaviour
                 lastPosition = dragObject.transform.position;
                 timeSinceLastUpdate = 0f; // Reset the timer
             }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (dragObject != null)
+        {
+            // Continuously update the object's position with the mouse position plus the offset
+            Vector3 newPosition =  Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
+            Vector3 direction = newPosition - lastPosition;
+            float angleRad = Mathf.Atan2(direction.y, direction.x);
+            float angleDeg = angleRad * Mathf.Rad2Deg;
+
+            SpriteRenderer renderer = dragObject.GetComponentInChildren<SpriteRenderer>();
+            if(direction.x < 0)
+            {
+                renderer.flipY = true;
+                //dragObject.transform.localScale = new Vector3(-1, 1, 1); // Flip the object horizontally
+                angleDeg += 180; // Adjust the angle for the flipped object
+            }
+            else
+            {
+                renderer.flipY = false;
+                //dragObject.transform.localScale = new Vector3(1, 1, 1); // Normal scale
+            }
+
+            dragObject.transform.rotation = Quaternion.Euler(0, 0, angleDeg);
+            Rigidbody2D rb = dragObject.GetComponent<Rigidbody2D>();
+            rb.MovePosition(newPosition);
         }
     }
 }
