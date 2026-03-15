@@ -56,7 +56,7 @@ class GameViewProvider implements vscode.WebviewViewProvider {
 					and only allow scripts that have a specific nonce.
 					(See the 'webview-sample' extension sample for img-src content security policy examples)
 				-->
-				<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${webview.cspSource}; script-src ${webview.cspSource} 'nonce-${nonce}' 'unsafe-eval'; connect-src ${webview.cspSource};">
+				<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${webview.cspSource} 'unsafe-inline'; script-src ${webview.cspSource} 'nonce-${nonce}' 'unsafe-eval'; connect-src ${webview.cspSource};">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<title>VS Buddy</title>
 				<style>
@@ -69,14 +69,23 @@ class GameViewProvider implements vscode.WebviewViewProvider {
 						display: flex;
 					}
 					#unity-container {
-						width: 100% !important;
-						height: 100% !important;
 						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
 					}
 					#unity-canvas {
-						width: 100% !important;
-						height: 100% !important;
+						width: min(100%, calc(100vh * 16 / 9));
+						height: auto;
+						max-width: 100%;
+						max-height: 100%;
 						display: block;
+						aspect-ratio: 16 / 9;
+						object-fit: contain;
 					}
                 </style>
 			</head>
