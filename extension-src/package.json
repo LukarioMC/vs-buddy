@@ -7,7 +7,7 @@
   "repository": {
     "url": "https://github.com/LukarioMC/vs-buddy"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "GPL-3.0-only",
   "engines": {
     "vscode": "^1.110.0"
