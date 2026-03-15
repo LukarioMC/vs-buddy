@@ -4,6 +4,10 @@ public class DragObject2D : MonoBehaviour
 {
     public GameObject dragObjectPrefab;
     public float updateInterval = 1.0f; // Time interval for updating the position
+    public GameObject bonziObject;
+    public BoxCollider2D[] wallColliders;
+    public float overlapThreshold = 0.1f;
+    
     private GameObject dragObject;
     private Vector3 lastPosition;
     private float timeSinceLastUpdate = 0f;
@@ -37,6 +41,29 @@ public class DragObject2D : MonoBehaviour
                 // Update the position of the drag object
                 lastPosition = dragObject.transform.position;
                 timeSinceLastUpdate = 0f; // Reset the timer
+            }
+        }
+
+        if (bonziObject != null)
+        {
+            // Create an array to store results
+            Collider2D[] results = new Collider2D[10];
+            
+            Collider2D pc = bonziObject.GetComponentInChildren<Collider2D>();
+
+            foreach (Collider2D collider in wallColliders)
+            {
+                // 1. Get the distance data between the two colliders
+                ColliderDistance2D dist = pc.Distance(collider);
+
+                // 2. Check if they are actually overlapping
+                // In Unity, a negative distance means they are overlapping
+                if (dist.isOverlapped && Mathf.Abs(dist.distance) > overlapThreshold)
+                {
+                    // 3. Force the transform over by the exact overlap amount
+                    // 'distance' is negative here, so we multiply by the normal to push away
+                    bonziObject.transform.position -= (Vector3)(dist.normal * Mathf.Abs(dist.distance));
+                }
             }
         }
     }
