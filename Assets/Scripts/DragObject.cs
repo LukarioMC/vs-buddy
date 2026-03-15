@@ -45,10 +45,7 @@ public class DragObject2D : MonoBehaviour
         }
 
         if (bonziObject != null)
-        {
-            // Create an array to store results
-            Collider2D[] results = new Collider2D[10];
-            
+        {            
             Collider2D pc = bonziObject.GetComponentInChildren<Collider2D>();
 
             foreach (Collider2D collider in wallColliders)
